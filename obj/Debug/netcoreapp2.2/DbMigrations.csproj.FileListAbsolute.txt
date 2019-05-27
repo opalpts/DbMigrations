@@ -1,0 +1,14 @@
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\bin\Debug\netcoreapp2.2\DbMigrations.deps.json
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\bin\Debug\netcoreapp2.2\DbMigrations.runtimeconfig.json
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\bin\Debug\netcoreapp2.2\DbMigrations.runtimeconfig.dev.json
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\bin\Debug\netcoreapp2.2\DbMigrations.dll
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\bin\Debug\netcoreapp2.2\DbMigrations.pdb
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.csprojAssemblyReference.cache
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.csproj.CoreCompileInputs.cache
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.RazorAssemblyInfo.cache
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.RazorAssemblyInfo.cs
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.AssemblyInfoInputs.cache
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.AssemblyInfo.cs
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.RazorTargetAssemblyInfo.cache
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.dll
+C:\Users\AppMan_43\source\repos\DbMigrations\DbMigrations\obj\Debug\netcoreapp2.2\DbMigrations.pdb
