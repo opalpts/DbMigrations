@@ -2,39 +2,54 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DbMigrations.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DbMigrations.Controllers
 {
-    //testsavesdfgh
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        private MainDBcontext _mainDbContext;
+
+        public ValuesController(MainDBcontext mainDbContext)
         {
-            return new string[] { "value1", "value2" };
+            _mainDbContext = mainDbContext;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        // GET api/values
+        [HttpGet]
+        public ActionResult<IEnumerable<Product>> Get()
         {
-            return "value";
+            return _mainDbContext.Products.ToList();
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<Product> Post(Product product)
         {
+            _mainDbContext.Products.Add(product);
+            _mainDbContext.SaveChanges();
+
+            return CreatedAtAction(nameof(Get), new { id = product.Id }, product);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put(string id, Product item)
         {
+
+            if (id != item.Id)
+            {
+                return BadRequest();
+            }
+
+            _mainDbContext.Entry(item).State = EntityState.Modified;
+            await _mainDbContext.SaveChangesAsync();
+
+            return NoContent();
         }
 
         // DELETE api/values/5
