@@ -38,10 +38,10 @@ namespace DbMigrations.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(string id, Product item)
+        public async Task<IActionResult> Put(string Id, Product item)
         {
 
-            if (id != item.Id)
+            if (Id != item.Id)
             {
                 return BadRequest();
             }
